@@ -1,0 +1,44 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# pank-mapovani
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+Tento repozitář obsahuje kód na zpracování a vizualizaci dat z dotazníkového šetření mapování analytických kapacit ve státní správě - výstup projektu PANK (Podpora analytických kapacit ve veřejné správě).
+
+Kód vyžaduje neveřejná individuální data z šetření. Názvy potřebných souborů jsou zaznamenány v `_targets.R` a podle nich je lze dohledat na Google Drive.
+
+Kód je organizován jako reprodukovatelná `{targets}` pipeline s verzovanými záznamy použitých balíků, takže celý proces se po vložení vstupních souborů dá spustit následně:
+
+```r
+renv::restore()
+targets::tar_make()
+```
+
+Hlavním výstupem jsou grafy v adresáři `charts-output`, použité v dokumentu shrnujícím hlavní poznatky ze šetření.
+
+Realizováno díky projektu PANK: Podpora analytických kapacit ve veřejné správě, [podpořeno TAČR v programu Éta](https://starfos.tacr.cz/cs/project/TL05000330).
+
+Více k projektu na [pank.cz](https://pank.cz)
+
+<details>
+<summary>Session info</summary>
+```{r}
+sessionInfo()
+```
+</details>
+
+
+Generováno `r Sys.time()`
