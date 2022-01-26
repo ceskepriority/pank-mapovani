@@ -22,7 +22,6 @@ pl_nastroje_uceni|stem|23fee4f4b983c974|8a7f01f317c6291e|59c6dcfddbeee3ae|-18491
 pl_org|stem|9b5c0e06418694d4|5bd67041e9985bed|7b117d54a20474bb|1529971283||t19016.4918453965s|4e8acd2b23125c2c|103514|rds|vector|||0.073|NAs introduced by coercion|
 pl_vystupy_bars|stem|dd62b0e90f20f42a|99df3f6c72f903a2|9b4e1cbc0e115d76|-893874416||t19016.491847325s|8934878fce441bbd|134035|rds|vector|||0.066|NAs introduced by coercion|
 pl_cinnost|stem|7f68a8f80e7c1d80|ac987d521ab5d361|5b6604e54eeb0657|304791817||t19016.4918492763s|13f6154f9c2b3a0f|119311|rds|vector|||0.093|NAs introduced by coercion|
-pl_expertiza|stem|97c661f173b64b18|54893f880d95e6c9|ee4a6defa0aa1fa4|-202528932||t19016.491851409s|04164fe52349cb19|119120|rds|vector|||0.087|NAs introduced by coercion|
 pl_vyuziti|stem|f0cf2e3a07062e8c|af4d5750b4ae3d86|5b6604e54eeb0657|2041048595||t19016.491853526s|e742105d4be9b648|118817|rds|vector|||0.054|NAs introduced by coercion|
 pl_pocet_hodn|stem|d3fc5af92e53e8eb|22b5b1fe25f5ea76|ee4a6defa0aa1fa4|683591193||t19016.4918556294s|1747240848213913|117643|rds|vector|||0.067|NAs introduced by coercion|
 pl_uceni|stem|b1c973af93e915ab|3c6f78f0c1324381|59c6dcfddbeee3ae|-1622266071||t19016.4918573194s|6219dde0f19dbd7b|116123|rds|vector|||0.052|NAs introduced by coercion|
@@ -73,4 +72,5 @@ plot_respondents|function|0558e53cafda59a5||||||||||||||
 plot_staff_indiv|function|7dd053a2b4179179||||||||||||||
 plot_staff_hist|function|c4aa37258f1be973||||||||||||||
 plot_heatmap|function|969c7720b60945f0||||||||||||||
-ex_expertiza|stem|87415f7b65281194|2fb51ea97578f375|b5ccb2170a3b1880|1484014643|charts-output/pl_expertiza.png|t19016.6282172506s|e056c4a272283c14|124135|file|vector|||1.29|Removed 2 rows containing missing values geom_text.|
+pl_expertiza|stem|29080bc034242637|81a06f5e75002f44|22dcbe7490ec480d|-202528932||t19018.8692674093s|6da93188e2a73f5f|119152|rds|vector|||1.082|NAs introduced by coercion|
+ex_expertiza|stem|bb88210352dc2e9f|3ddb306d2194a974|2d67d89aefe99ed8|1484014643|charts-output/pl_expertiza.png|t19018.8692736646s|0e9c5f92d30705b8|113809|file|vector|||0.443|Removed 2 rows containing missing values geom_text.|

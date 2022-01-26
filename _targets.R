@@ -101,7 +101,10 @@ list(
                                         title = "Jaká část výstupů Vašeho útvaru je zveřejněna?",
                                         scale_palette = "RdYlGn", key_wrap = 100)),
   tar_target(pl_expertiza,
-             plot_stacked(rslts_long,
+             plot_stacked(rslts_long |>
+                            mutate(item = str_replace(item, "příspěvkové organizace", "přísp. org.") |>
+                                     str_replace("výzkumné instituce", " výzk. inst.") |>
+                                     str_remove("apod\\.")),
                           "Využívá Váš útvar následující způsoby k získávání expertíz",
                           title = "Způsoby získávání expertíz, analýz a poradenství",
                           subtitle = "řazeno podle frekvence využití",
@@ -111,7 +114,7 @@ list(
   tar_file(ex_pocet_hodn, save_plot(pl_pocet_hodn, height_cm = 3)),
   tar_file(ex_hodn, save_plot(pl_hodn, height_cm = 6)),
   tar_file(ex_cinnost, save_plot(pl_cinnost, height_cm = 9.5)),
-  tar_file(ex_expertiza, save_plot(pl_expertiza, height_cm = 9.5)),
+  tar_file(ex_expertiza, save_plot(pl_expertiza, height_cm = 7)),
   tar_file(ex_vyuziti, save_plot(pl_vyuziti, height_cm = 6)),
   tar_file(ex_vystupy_bars, save_plot(pl_vystupy_bars, height_cm = 6)),
   tar_file(ex_uceni, save_plot(pl_uceni, height_cm = 10)),
