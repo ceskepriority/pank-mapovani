@@ -92,7 +92,7 @@ list(
                                   "Většina", "Všechny")), scale_palette = "RdYlGn") +
                theme(axis.text.y = element_blank())),
   tar_target(pl_vyuziti, plot_stacked(rslts_long, "využívány ve Vaší organizaci",
-                                      scale_keys = scales_freq,
+                                      scale_keys = c(scales_freq[1:4], "Nevím"),
                                       title = "Využití výstupů útvaru",
                                       subtitle = "Do jaké míry jsou analýzy Vašeho útvaru využívány ve Vaší organizaci, popř. mimo ni?")),
   tar_target(pl_vystupy_bars, plot_bars(rslts_long, "Jaká část vašich analytických výstupů je zveřejněna",
